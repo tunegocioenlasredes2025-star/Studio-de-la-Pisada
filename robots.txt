@@ -1,2 +1,7 @@
+# Demo en Vercel: no se indexa para no competir con el sitio del cliente.
+# Al pasar la web al dominio propio, reemplazar todo este archivo por:
+#   User-agent: *
+#   Allow: /
+#   Sitemap: https://estudiodelapisada.com.ar/sitemap.xml
 User-agent: *
 Disallow: /

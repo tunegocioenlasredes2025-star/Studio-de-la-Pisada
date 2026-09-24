@@ -1,3 +1,6 @@
-# Studio de la Pisada
+# Estudio de la Pisada · web (demo)
 
-Web one-page (demo de rediseño) de Studio de la Pisada: estudio de la pisada a domicilio y plantillas ortopédicas. Hecha por Tu Negocio En Las Redes.
+Actualización de la web de Estudio de la Pisada (Haedo): el sitio pasa a apuntarle al
+profesional de la salud (comodato del podógrafo) y deja al paciente en segundo plano.
+Hecha por Tu Negocio En Las Redes. No se indexa (noindex + robots) hasta que el cliente la
+ponga en su dominio.
