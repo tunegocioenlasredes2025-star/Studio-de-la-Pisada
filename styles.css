@@ -74,8 +74,6 @@ h2{font-size:clamp(1.9rem,4.2vw,3rem);margin-bottom:18px}
 .zona b{font-size:1.25rem}
 .nota{margin-top:18px;color:var(--sub)}
 
-/* Respaldo */
-.retrato img{width:100%;border-radius:var(--r);max-width:340px;margin:0 auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%}
 
 /* Cierre */
 .cierre{text-align:center;background:radial-gradient(ellipse at 50% 40%,rgba(17,207,245,.18),transparent 60%)}
