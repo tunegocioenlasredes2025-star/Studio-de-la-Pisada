@@ -192,6 +192,8 @@ h3{font-size:1.8rem}
   .pasos li{grid-template-columns:52px 1fr}
   .pasos i{font-size:1.8rem}
   .aligna-foto img{max-width:220px}
+  .cab{letter-spacing:.06em;font-size:.74rem}
+  .cab span{white-space:nowrap}
 }
 @media (max-width:370px){ .marca span{display:none} }
 @media (prefers-reduced-motion:reduce){
