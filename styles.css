@@ -212,11 +212,17 @@ h1 .ln,h2 .ln,.ln-t{color:inherit}
 .anima .capitulos li.activo{opacity:1}
 .anima .mosaico.armando{overflow:visible;background:none}
 .anima .mosaico.armando img{opacity:0}
-.anima .historia-pin{height:100svh;padding:76px 0 12px;display:flex;align-items:center}
+.anima .historia-pin{height:100svh;padding:76px 0 12px;display:flex;align-items:center;overflow:hidden}
+html.anima{scroll-behavior:auto}
+.anima .capa,.anima .pie-escaneo,.anima .pila{will-change:transform}
 .anima .escena{height:calc(100svh - 120px);max-height:720px}
 
 @media (min-width:900px){
   .historia-grid{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:56px}
+  /* Fijo en pantalla: solo el paso activo muestra su explicación, así siempre entra en la pantalla. */
+  .anima .historia-grid{align-items:center}
+  .anima .capitulos li{padding:14px 0}
+  .anima .capitulos li:not(.activo) p,.anima .capitulos li:not(.activo) .cotas{display:none}
   .hero-marco{max-width:520px}
 }
 @media (max-width:899px){
@@ -230,4 +236,11 @@ h1 .ln,h2 .ln,.ln-t{color:inherit}
   .anima .capitulos li.activo{opacity:1}
   .rotulos li{font-size:.82rem}
   .hero-marco{aspect-ratio:4/3.4}
+}
+
+@media (min-width:900px) and (max-height:760px){
+  .anima .capitulos b{font-size:1.15rem}
+  .anima .capitulos i{font-size:1.6rem}
+  .anima .capitulos p{font-size:1.02rem}
+  .anima .historia-txt .eti{margin-bottom:8px}
 }

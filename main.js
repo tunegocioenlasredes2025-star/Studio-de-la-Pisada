@@ -110,15 +110,14 @@
 
   var tl = gsap.timeline({
     defaults: { ease: 'none' },
-    scrollTrigger: {
-      trigger: pin, start: 'top top', end: esCelu ? '+=260%' : '+=320%', pin: true, scrub: 0.8, anticipatePin: 1,
-      onUpdate: function (st) {
-        var t = tl.time();
-        activar(t < 1.25 ? 0 : t < 2.2 ? 1 : t < 4.6 ? 2 : 3);
-        gsap.set('.progreso i', { scaleX: st.progress });
-        ubicarRotulos();
-      }
-    }
+    // Todo lo que acompaña (paso activo, barra, rótulos) sigue a la animación, no al scroll: así no se desfasa si scrolleás rápido.
+    onUpdate: function () {
+      var t = tl.time();
+      activar(t < 1.25 ? 0 : t < 2.2 ? 1 : t < 4.6 ? 2 : 3);
+      gsap.set('.progreso i', { scaleX: tl.progress() });
+      if (t > 3.2 && t < 4.7) ubicarRotulos();
+    },
+    scrollTrigger: { trigger: pin, start: 'top top', end: esCelu ? '+=260%' : '+=320%', pin: true, scrub: 0.8, anticipatePin: 1 }
   });
 
   // 1 · Barrido: la foto del pie se convierte en mapa de presión.
@@ -184,6 +183,16 @@
   // ---------- Listas que entran de a una ----------
   $$('.pasos li, .sede, .faq details, .lista li').forEach(function (el) {
     gsap.from(el, { y: 30, opacity: 0, duration: 0.8, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 92%', once: true } });
+  });
+
+  // Los links del menú bajan suave (el smooth de CSS se apaga porque traba el scroll fijo).
+  $$('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var id = a.getAttribute('href'); if (id.length < 2) return;
+      var dest = $(id); if (!dest) return;
+      e.preventDefault();
+      window.scrollTo({ top: dest.getBoundingClientRect().top + window.scrollY - 76, behavior: 'smooth' });
+    });
   });
 
   window.addEventListener('load', function () { ScrollTrigger.refresh(); });
