@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<link rel="preload" as="image" href="img/pies-foto.webp">
+<link rel="preload" as="image" href="img/pies-vidrio.webp">
 
 <script type="application/ld+json">
 {
@@ -64,7 +64,7 @@
         {"@type": "Question", "name": "¿Qué diferencia hay entre el estudio digital y el de tinta?",
          "acceptedAnswer": {"@type": "Answer", "text": "El de tinta deja una huella. El digital muestra la presión de cada zona en colores y toma medidas del pie en milímetros, sin tinta y sin moldes."}},
         {"@type": "Question", "name": "Me duelen las rodillas o la espalda: ¿puede venir de cómo piso?",
-         "acceptedAnswer": {"@type": "Answer", "text": "A veces la forma de pisar influye. El estudio ayuda a verlo, y si hace falta te consulta el traumatólogo."}},
+         "acceptedAnswer": {"@type": "Answer", "text": "A veces la forma de pisar influye. El estudio ayuda a verlo, y si hace falta te recomendamos hacer una consulta médica."}},
         {"@type": "Question", "name": "¿Una plantilla de farmacia sirve igual que una a medida?",
          "acceptedAnswer": {"@type": "Answer", "text": "La de farmacia viene en talles estándar. La plantilla Aligna se fabrica con los datos de tu estudio, para tu pie."}},
         {"@type": "Question", "name": "¿Tengo que usar la plantilla en todos los zapatos?",
@@ -101,63 +101,88 @@
 </header>
 
 <main>
-  <!-- 1 · Portada con el escaneo -->
+  <!-- 1 · Portada -->
   <section class="hero">
     <div class="envase hero-grid">
       <div class="hero-txt">
-        <p class="zonas-linea">Haedo <i></i> Ituzaingó <i></i> Moreno</p>
-        <h1>Estudio de la pisada <span>con podógrafo digital</span></h1>
-        <p class="lead">Te parás descalzo y en la pantalla vemos <b>cómo apoyás y dónde cargás el peso</b>. Con ese estudio te hacemos tus plantillas <b>Aligna</b> a medida.</p>
-        <a class="btn btn-wa grande" href="https://wa.me/5491166384242?text=Hola%2C%20quiero%20un%20turno%20para%20el%20estudio%20de%20la%20pisada" target="_blank" rel="noopener" data-wa>
-          <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><use href="#ico-wa"/></svg>
-          Pedí tu turno por WhatsApp
-        </a>
-        <p class="tel">O llamanos al <a href="tel:+5491166384242">11 6638-4242</a></p>
-      </div>
-
-      <!-- Escaneo: el pie apoya, baja el barrido y aparece el mapa de presión con las medidas -->
-      <figure class="escaneo listo estatico" aria-label="Animación del estudio: el pie apoya sobre el podógrafo, un barrido lo escanea y aparece el mapa de presión con las medidas.">
-        <div class="pantalla">
-          <div class="cab"><span>Podógrafo digital</span><span class="estado" data-estado>Apoyá los pies</span></div>
-          <div class="placa">
-            <div class="grilla"></div>
-            <img class="pies foto" src="img/pies-foto.webp" alt="" width="924" height="876">
-            <img class="pies calor" src="img/pies-presion.webp" alt="" width="924" height="876">
-            <div class="barrido"></div>
-            <span class="lado izq">IZQ</span><span class="lado der">DER</span>
-          </div>
-          <div class="escala" aria-hidden="true"><span>Menos presión</span><i></i><span>Más presión</span></div>
+        <p class="zonas-linea" data-sube>Haedo <i></i> Ituzaingó <i></i> Moreno</p>
+        <h1 data-lineas>Estudio de la pisada <span>con podógrafo digital</span></h1>
+        <p class="lead" data-sube>Te parás descalzo y en la pantalla vemos <b>cómo apoyás y dónde cargás el peso</b>. Con ese estudio te hacemos tus plantillas <b>Aligna</b> a medida.</p>
+        <div data-sube>
+          <a class="btn btn-wa grande" href="https://wa.me/5491166384242?text=Hola%2C%20quiero%20un%20turno%20para%20el%20estudio%20de%20la%20pisada" target="_blank" rel="noopener" data-wa>
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><use href="#ico-wa"/></svg>
+            Pedí tu turno por WhatsApp
+          </a>
+          <p class="tel">O llamanos al <a href="tel:+5491166384242">11 6638-4242</a></p>
         </div>
-        <dl class="medidas">
-          <div><dt>Largo del pie</dt><dd><b data-n="250">250</b> / <b data-n="255">255</b> mm</dd></div>
-          <div><dt>Ancho antepié</dt><dd><b data-n="107">107</b> / <b data-n="106">106</b> mm</dd></div>
-          <div><dt>Ancho talón</dt><dd><b data-n="70">70</b> / <b data-n="70">70</b> mm</dd></div>
-          <div><dt>Longitud de arco</dt><dd><b data-n="129">129</b> / <b data-n="131">131</b> mm</dd></div>
-        </dl>
-        <figcaption>Estudio de ejemplo. Izquierdo / derecho.</figcaption>
+      </div>
+      <figure class="hero-foto">
+        <div class="hero-marco"><img src="img/pies-vidrio.webp" alt="Pies descalzos apoyados sobre el vidrio del podógrafo digital" width="900" height="1125" fetchpriority="high"></div>
+        <figcaption><span>01</span> El estudio dura unos minutos y no duele.</figcaption>
       </figure>
     </div>
   </section>
 
-  <!-- 2 · Cómo es el estudio -->
-  <section class="sec" id="estudio">
-    <div class="envase">
-      <p class="eti">Cómo es</p>
-      <h2>El estudio de la pisada, <span>paso a paso</span></h2>
-      <ol class="pasos">
-        <li><i>01</i><div><b>Pedís turno por WhatsApp</b><p>En Haedo, Ituzaingó o Moreno, el que te quede más cerca.</p></div></li>
-        <li><i>02</i><div><b>Te parás sobre el podógrafo</b><p>Descalzo, unos segundos. No duele. En la pantalla aparece el mapa de tu pisada en colores, con las medidas del pie en milímetros.</p></div></li>
-        <li><i>03</i><div><b>Te explicamos lo que se ve</b><p>Dónde cargás más peso, cómo es tu arco y qué conviene hacer en tu caso.</p></div></li>
-        <li><i>04</i><div><b>Te hacemos tus plantillas</b><p>Plantillas Aligna fabricadas con los datos de tu estudio, en espuma Plastazote®.</p></div></li>
-      </ol>
-      <div class="comparo">
-        <div><b>Estudio de tinta</b><p>Deja una huella en un papel.</p></div>
-        <div class="si"><b>Estudio digital</b><p>Muestra la presión de cada zona y mide el pie. Sin tinta y sin moldes.</p></div>
+  <!-- 2 · Del pie a la plantilla (se fija en pantalla y se arma con el scroll) -->
+  <section class="historia" id="estudio" aria-labelledby="historia-t">
+    <div class="historia-pin">
+      <div class="envase historia-grid">
+        <div class="historia-txt">
+          <p class="eti">Del pie a la plantilla</p>
+          <h2 id="historia-t" class="sr-only">Del pie a la plantilla, paso a paso</h2>
+          <ol class="capitulos">
+            <li data-cap="0"><i>1</i><b>Escaneamos tu pisada</b><p>Te parás descalzo sobre el podógrafo. Sin tinta y sin moldes.</p></li>
+            <li data-cap="1"><i>2</i><b>Vemos dónde cargás el peso</b><p>El mapa en colores muestra la presión de cada zona, y medimos el pie en milímetros.</p>
+              <dl class="cotas"><div><dt>Largo</dt><dd>255 mm</dd></div><div><dt>Antepié</dt><dd>106 mm</dd></div><div><dt>Arco</dt><dd>131 mm</dd></div></dl></li>
+            <li data-cap="2"><i>3</i><b>Armamos tu plantilla, capa por capa</b><p>Con los datos de tu estudio elegimos cada pieza.</p></li>
+            <li data-cap="3"><i>4</i><b>Lista para tu pie</b><p>Tu plantilla Aligna, hecha a medida en Plastazote®.</p></li>
+          </ol>
+        </div>
+        <div class="escena" aria-hidden="true">
+          <div class="pie-escaneo">
+            <img class="pf" src="img/pie-der-foto.webp" alt="" width="348" height="800">
+            <img class="pp" src="img/pie-der-presion.webp" alt="" width="348" height="800">
+            <i class="linea-barrido"></i>
+          </div>
+          <div class="pila">
+            <img class="capa talon" src="img/pieza-talon.webp" alt="" width="187" height="293">
+            <img class="capa metatarso" src="img/pieza-metatarso.webp" alt="" width="194" height="287">
+            <img class="capa arco" src="img/pieza-arco.webp" alt="" width="181" height="524">
+            <img class="capa espuma" src="img/pieza-espuma.webp" alt="" width="316" height="912">
+            <img class="capa cubierta" src="img/pieza-cubierta.webp" alt="" width="322" height="914">
+          </div>
+          <ul class="rotulos">
+            <li class="r-cubierta" data-c="Cubierta">Cubierta perforada</li>
+            <li class="r-espuma" data-c="Plastazote®">Espuma Plastazote®</li>
+            <li class="r-arco" data-c="Arco">Soporte de arco</li>
+            <li class="r-metatarso" data-c="Metatarsal">Almohadilla metatarsal</li>
+            <li class="r-talon" data-c="Talonera">Talonera de gel</li>
+          </ul>
+          <img class="final" src="img/plantilla-final.webp" alt="" width="1400" height="933" loading="lazy">
+        </div>
       </div>
+      <div class="progreso" aria-hidden="true"><i></i></div>
     </div>
   </section>
 
-  <!-- 3 · Campaña Salud del Pie -->
+  <!-- 3 · En el consultorio (la foto se arma con piezas) -->
+  <section class="sec consultorio" aria-labelledby="consul-t">
+    <div class="envase">
+      <p class="eti">Cómo es</p>
+      <h2 id="consul-t" data-lineas>Venís, te parás <span>y lo ves en la pantalla</span></h2>
+      <figure class="mosaico" data-mosaico>
+        <img src="img/consultorio.webp" alt="Una paciente parada sobre el podógrafo mientras le muestran en la computadora el mapa de su pisada" width="1600" height="900" loading="lazy">
+      </figure>
+      <ol class="pasos">
+        <li><i>01</i><div><b>Pedís turno por WhatsApp</b><p>En Haedo, Ituzaingó o Moreno, el que te quede más cerca.</p></div></li>
+        <li><i>02</i><div><b>Te parás sobre el podógrafo</b><p>Descalzo, unos segundos. No duele.</p></div></li>
+        <li><i>03</i><div><b>Te explicamos lo que se ve</b><p>Dónde cargás más peso, cómo es tu arco y qué conviene en tu caso.</p></div></li>
+        <li><i>04</i><div><b>Te hacemos tus plantillas</b><p>Plantillas Aligna con los datos de tu estudio.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 4 · Campaña Salud del Pie -->
   <section class="campana" id="campana">
     <div class="envase">
       <p class="eti claro">Para jubilados, pensionados y público en general</p>
@@ -180,16 +205,15 @@
     </div>
   </section>
 
-  <!-- 4 · Plantillas Aligna -->
+  <!-- 5 · Plantillas Aligna -->
   <section class="sec" id="plantillas">
     <div class="envase dos">
-      <figure class="aligna-foto">
-        <img src="img/plantillas-aligna.webp" alt="Plantillas Aligna a medida en espuma Plastazote" width="800" height="981" loading="lazy" decoding="async">
-        <figcaption>Plantillas Aligna · Plastazote®</figcaption>
+      <figure class="plant-foto" data-revela>
+        <img src="img/plantilla-final.webp" alt="Plantilla Aligna terminada: cubierta gris perforada, espuma Plastazote y soporte de arco" width="1400" height="933" loading="lazy">
       </figure>
       <div>
         <p class="eti">Las plantillas</p>
-        <h2>Plantillas a medida, <span>hechas con tu estudio</span></h2>
+        <h2 data-lineas>Plantillas a medida, <span>hechas con tu estudio</span></h2>
         <p class="lead">No es un talle de góndola. Cada plantilla <b>Aligna</b> se fabrica con las medidas y el mapa de presión de tu pie.</p>
         <ul class="lista">
           <li>Espuma <b>Plastazote®</b>, liviana y cómoda.</li>
@@ -200,11 +224,11 @@
     </div>
   </section>
 
-  <!-- 5 · Consultorios -->
+  <!-- 6 · Consultorios -->
   <section class="sec sec-papel" id="consultorios">
     <div class="envase">
       <p class="eti">Dónde estamos</p>
-      <h2>Estudio de la pisada en <span>Haedo, Ituzaingó y Moreno</span></h2>
+      <h2 data-lineas>Estudio de la pisada en <span>Haedo, Ituzaingó y Moreno</span></h2>
       <div class="sedes">
         <!-- DIRECCIONES A CONFIRMAR CON FER: cuando las pase, cambiar el texto .dir y el q= del mapa por la dirección exacta. -->
         <article class="sede">
@@ -236,16 +260,16 @@
     </div>
   </section>
 
-  <!-- 6 · Preguntas frecuentes (respuestas a validar por el Dr. Zabala) -->
+  <!-- 7 · Preguntas frecuentes (respuestas a validar por el Dr. Zabala) -->
   <section class="sec" id="preguntas">
     <div class="envase angosto">
       <p class="eti">Preguntas frecuentes</p>
-      <h2>Lo que más <span>nos preguntan</span></h2>
+      <h2 data-lineas>Lo que más <span>nos preguntan</span></h2>
       <div class="faq">
         <details><summary>¿Qué es el estudio de la pisada y cuánto dura?</summary><p>Te parás descalzo sobre el podógrafo digital y en la pantalla vemos cómo apoyás cada zona del pie y dónde cargás el peso. Se hace en pocos minutos.</p></details>
         <details><summary>¿Duele? ¿Tengo que llevar algo?</summary><p>No duele: solo te parás sobre una superficie de vidrio. Traé el calzado que más usás, así lo miramos también.</p></details>
         <details><summary>¿Qué diferencia hay entre el estudio digital y el de tinta?</summary><p>El de tinta deja una huella. El digital muestra la presión de cada zona en colores y toma medidas del pie en milímetros, sin tinta y sin moldes.</p></details>
-        <details><summary>Me duelen las rodillas o la espalda: ¿puede venir de cómo piso?</summary><p>A veces la forma de pisar influye. El estudio ayuda a verlo, y si hace falta te consulta el traumatólogo.</p></details>
+        <details><summary>Me duelen las rodillas o la espalda: ¿puede venir de cómo piso?</summary><p>A veces la forma de pisar influye. El estudio ayuda a verlo, y si hace falta te recomendamos hacer una consulta médica.</p></details>
         <details><summary>¿Una plantilla de farmacia sirve igual que una a medida?</summary><p>La de farmacia viene en talles estándar. La plantilla Aligna se fabrica con los datos de tu estudio, para tu pie.</p></details>
         <details><summary>¿Tengo que usar la plantilla en todos los zapatos?</summary><p>Lo ideal es usarla en el calzado de todos los días. En el consultorio te decimos cómo hacerlo según tu caso.</p></details>
         <details><summary>¿Cuánto tarda uno en acostumbrarse?</summary><p>Por lo general, unos días. Conviene empezar de a poco, unas horas por día.</p></details>
@@ -255,22 +279,21 @@
     </div>
   </section>
 
-  <!-- 7 · Quiénes somos (solo nombres, sin fotos) -->
+  <!-- 8 · Quiénes somos: Studio es solo de Fernando (pedido de Mateo, 15/10) -->
   <section class="sec sec-papel" id="quienes">
     <div class="envase">
       <p class="eti">Quiénes somos</p>
-      <ul class="equipo">
-        <li><b>Prof. Dr. Fabián Zabala</b><span>Traumatología</span></li>
-        <li><b>Fernando Masso</b><span>Relaciones empresariales</span></li>
-        <li><b>Karina Salomón</b><span>Relaciones empresariales</span></li>
-      </ul>
+      <div class="quien">
+        <b>Fernando Masso</b>
+        <p>Fabricante de espumas y plantillas, y representante de Plastazote®. Detrás de cada estudio y de cada plantilla Aligna.</p>
+      </div>
     </div>
   </section>
 
-  <!-- 8 · Cierre -->
+  <!-- 9 · Cierre -->
   <section class="sec cierre">
     <div class="envase">
-      <h2>¿Querés hacerte <span>el estudio?</span></h2>
+      <h2 data-lineas>¿Querés hacerte <span>el estudio?</span></h2>
       <p class="lead">Escribinos y te damos turno en el consultorio que te quede más cerca.</p>
       <a class="btn btn-wa grande" href="https://wa.me/5491166384242?text=Hola%2C%20quiero%20un%20turno%20para%20el%20estudio%20de%20la%20pisada" target="_blank" rel="noopener" data-wa>
         <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><use href="#ico-wa"/></svg>
@@ -297,6 +320,8 @@
   <symbol id="ico-wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></symbol>
 </svg>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 <script src="main.js" defer></script>
 </body>
 </html>
