@@ -3,96 +3,279 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Studio de la Pisada | Estudio de la pisada y plantillas Aligna</title>
-<meta name="description" content="Estudio de la pisada con podógrafo digital y plantillas Aligna a medida en Plastazote®. Consultorios en Haedo, Ituzaingó y Moreno. Pedí tu turno por WhatsApp.">
+<title>Estudio de la pisada en Haedo, Ituzaingó y Moreno | Studio de la Pisada</title>
+<meta name="description" content="Estudio de la pisada con podógrafo digital y plantillas Aligna a medida en Plastazote®. Consultorios en Haedo, Ituzaingó y Moreno. Campaña Salud del Pie: consulta con traumatólogo + plantillas, $60.000. Turnos por WhatsApp.">
+<!-- DEMO: no se indexa hasta que el cliente la compre y pase a su dominio. Al publicarla de verdad, sacar esta línea y cambiar robots.txt. -->
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#05080E">
+<meta name="theme-color" content="#F5F2EC">
 <link rel="icon" href="img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="img/icono-180.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Studio de la Pisada">
-<meta property="og:title" content="Studio de la Pisada | Estudio de la pisada y plantillas Aligna">
-<meta property="og:description" content="Estudio con podógrafo digital y plantillas a medida en Plastazote®. Haedo, Ituzaingó y Moreno.">
+<meta property="og:title" content="Estudio de la pisada en Haedo, Ituzaingó y Moreno">
+<meta property="og:description" content="Podógrafo digital y plantillas Aligna a medida. Turnos por WhatsApp.">
 <meta property="og:image" content="img/og.jpg">
 <meta property="og:locale" content="es_AR">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<link rel="preload" as="image" href="img/podografo.webp">
+<link rel="preload" as="image" href="img/pies-foto.webp">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalBusiness",
+      "@id": "#studio",
+      "name": "Studio de la Pisada",
+      "description": "Estudio de la pisada con podógrafo digital y plantillas Aligna a medida en Plastazote®.",
+      "telephone": "+54 9 11 6638-4242",
+      "image": "img/og.jpg",
+      "logo": "img/logo-circular.webp",
+      "priceRange": "$$",
+      "areaServed": ["Haedo", "Ituzaingó", "Moreno", "Morón", "Castelar", "Ramos Mejía", "Paso del Rey"],
+      "knowsAbout": ["Estudio de la pisada", "Podografía digital", "Plantillas ortopédicas a medida"],
+      "sameAs": ["https://www.instagram.com/studiodelapisada_/"],
+      "makesOffer": {
+        "@type": "Offer",
+        "name": "Campaña Salud del Pie",
+        "description": "Consulta médica ortopédica y traumatológica + plantillas personalizadas.",
+        "price": "60000",
+        "priceCurrency": "ARS"
+      },
+      "department": [
+        {"@type": "MedicalBusiness", "name": "Studio de la Pisada · Haedo", "telephone": "+54 9 11 6638-4242",
+         "address": {"@type": "PostalAddress", "addressLocality": "Haedo", "addressRegion": "Buenos Aires", "addressCountry": "AR"}},
+        {"@type": "MedicalBusiness", "name": "Studio de la Pisada · Ituzaingó", "telephone": "+54 9 11 6638-4242",
+         "address": {"@type": "PostalAddress", "addressLocality": "Ituzaingó", "addressRegion": "Buenos Aires", "addressCountry": "AR"}},
+        {"@type": "MedicalBusiness", "name": "Studio de la Pisada · Moreno", "telephone": "+54 9 11 6638-4242",
+         "address": {"@type": "PostalAddress", "addressLocality": "Moreno", "addressRegion": "Buenos Aires", "addressCountry": "AR"}}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "¿Qué es el estudio de la pisada y cuánto dura?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Te parás descalzo sobre el podógrafo digital y en la pantalla vemos cómo apoyás cada zona del pie y dónde cargás el peso. Se hace en pocos minutos."}},
+        {"@type": "Question", "name": "¿Duele? ¿Tengo que llevar algo?",
+         "acceptedAnswer": {"@type": "Answer", "text": "No duele: solo te parás sobre una superficie de vidrio. Traé el calzado que más usás, así lo miramos también."}},
+        {"@type": "Question", "name": "¿Qué diferencia hay entre el estudio digital y el de tinta?",
+         "acceptedAnswer": {"@type": "Answer", "text": "El de tinta deja una huella. El digital muestra la presión de cada zona en colores y toma medidas del pie en milímetros, sin tinta y sin moldes."}},
+        {"@type": "Question", "name": "Me duelen las rodillas o la espalda: ¿puede venir de cómo piso?",
+         "acceptedAnswer": {"@type": "Answer", "text": "A veces la forma de pisar influye. El estudio ayuda a verlo, y si hace falta te consulta el traumatólogo."}},
+        {"@type": "Question", "name": "¿Una plantilla de farmacia sirve igual que una a medida?",
+         "acceptedAnswer": {"@type": "Answer", "text": "La de farmacia viene en talles estándar. La plantilla Aligna se fabrica con los datos de tu estudio, para tu pie."}},
+        {"@type": "Question", "name": "¿Tengo que usar la plantilla en todos los zapatos?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Lo ideal es usarla en el calzado de todos los días. En el consultorio te decimos cómo hacerlo según tu caso."}},
+        {"@type": "Question", "name": "¿Cuánto tarda uno en acostumbrarse?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Por lo general, unos días. Conviene empezar de a poco, unas horas por día."}},
+        {"@type": "Question", "name": "¿Cada cuánto conviene repetir el estudio?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Depende de cada persona. En los chicos que están creciendo se controla más seguido."}},
+        {"@type": "Question", "name": "¿Dónde se hace el estudio de la pisada?",
+         "acceptedAnswer": {"@type": "Answer", "text": "En nuestros consultorios de Haedo, Ituzaingó y Moreno. Pedí tu turno por WhatsApp al 11 6638-4242."}}
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
 <header class="barra">
-  <a href="#" class="barra-logo" aria-label="Studio de la Pisada, inicio"><img src="img/logo-sdlp.webp" alt="Studio de la Pisada · Análisis de pisada" width="600" height="652"></a>
-  <a class="btn btn-wa chico" href="https://wa.me/5491166384242?text=Hola%2C%20quiero%20un%20turno%20para%20el%20estudio%20de%20la%20pisada" target="_blank" rel="noopener" data-wa>Pedí tu turno</a>
+  <a href="#" class="marca" aria-label="Studio de la Pisada, inicio">
+    <img src="img/logo-circular.webp" alt="" width="180" height="180">
+    <span>Studio de la Pisada</span>
+  </a>
+  <nav class="menu" aria-label="Secciones">
+    <a href="#estudio">El estudio</a>
+    <a href="#campana">Campaña</a>
+    <a href="#consultorios">Consultorios</a>
+    <a href="#preguntas">Preguntas</a>
+  </nav>
+  <a class="btn btn-wa chico" href="https://wa.me/5491166384242?text=Hola%2C%20quiero%20un%20turno%20para%20el%20estudio%20de%20la%20pisada" target="_blank" rel="noopener" data-wa>
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><use href="#ico-wa"/></svg>
+    Turnos
+  </a>
 </header>
 
 <main>
-  <!-- 1 · Portada -->
+  <!-- 1 · Portada con el escaneo -->
   <section class="hero">
     <div class="envase hero-grid">
-      <div>
-        <img class="hero-logo" src="img/logo-sdlp.webp" alt="" width="600" height="652">
-        <h1>Estudio de la pisada <em>con podógrafo digital.</em></h1>
-        <p class="lead">Y tus plantillas <b>Aligna</b> a medida, en espuma <b>Plastazote®</b>.</p>
-        <div class="precio"><span>Estudio + plantillas Aligna</span><div><small>desde</small> <b>$50.000</b></div></div>
-        <div class="acciones">
-          <a class="btn btn-wa" href="https://wa.me/5491166384242?text=Hola%2C%20quiero%20un%20turno%20para%20el%20estudio%20de%20la%20pisada" target="_blank" rel="noopener" data-wa>Pedí tu turno por WhatsApp</a>
-        </div>
-        <p class="zonas-linea">Consultorios en Haedo · Ituzaingó · Moreno</p>
+      <div class="hero-txt">
+        <p class="zonas-linea">Haedo <i></i> Ituzaingó <i></i> Moreno</p>
+        <h1>Estudio de la pisada <span>con podógrafo digital</span></h1>
+        <p class="lead">Te parás descalzo y en la pantalla vemos <b>cómo apoyás y dónde cargás el peso</b>. Con ese estudio te hacemos tus plantillas <b>Aligna</b> a medida.</p>
+        <a class="btn btn-wa grande" href="https://wa.me/5491166384242?text=Hola%2C%20quiero%20un%20turno%20para%20el%20estudio%20de%20la%20pisada" target="_blank" rel="noopener" data-wa>
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><use href="#ico-wa"/></svg>
+          Pedí tu turno por WhatsApp
+        </a>
+        <p class="tel">O llamanos al <a href="tel:+5491166384242">11 6638-4242</a></p>
       </div>
-      <img class="hero-maq" src="img/podografo.webp" alt="Podógrafo digital con el mapa de presión de los dos pies" width="1100" height="889" fetchpriority="high">
+
+      <!-- Escaneo: el pie apoya, baja el barrido y aparece el mapa de presión con las medidas -->
+      <figure class="escaneo listo estatico" aria-label="Animación del estudio: el pie apoya sobre el podógrafo, un barrido lo escanea y aparece el mapa de presión con las medidas.">
+        <div class="pantalla">
+          <div class="cab"><span>Podógrafo digital</span><span class="estado" data-estado>Apoyá los pies</span></div>
+          <div class="placa">
+            <div class="grilla"></div>
+            <img class="pies foto" src="img/pies-foto.webp" alt="" width="924" height="876">
+            <img class="pies calor" src="img/pies-presion.webp" alt="" width="924" height="876">
+            <div class="barrido"></div>
+            <span class="lado izq">IZQ</span><span class="lado der">DER</span>
+          </div>
+          <div class="escala" aria-hidden="true"><span>Menos presión</span><i></i><span>Más presión</span></div>
+        </div>
+        <dl class="medidas">
+          <div><dt>Largo del pie</dt><dd><b data-n="250">250</b> / <b data-n="255">255</b> mm</dd></div>
+          <div><dt>Ancho antepié</dt><dd><b data-n="107">107</b> / <b data-n="106">106</b> mm</dd></div>
+          <div><dt>Ancho talón</dt><dd><b data-n="70">70</b> / <b data-n="70">70</b> mm</dd></div>
+          <div><dt>Longitud de arco</dt><dd><b data-n="129">129</b> / <b data-n="131">131</b> mm</dd></div>
+        </dl>
+        <figcaption>Estudio de ejemplo. Izquierdo / derecho.</figcaption>
+      </figure>
     </div>
   </section>
 
-  <!-- 2 · Cómo es -->
-  <section class="sec" id="como-es">
+  <!-- 2 · Cómo es el estudio -->
+  <section class="sec" id="estudio">
     <div class="envase">
       <p class="eti">Cómo es</p>
-      <h2>Tres pasos, <em>y tenés tus plantillas.</em></h2>
+      <h2>El estudio de la pisada, <span>paso a paso</span></h2>
       <ol class="pasos">
-        <li><i>1</i><b>Pedís turno</b><span>Por WhatsApp, en el consultorio que te quede más cerca.</span></li>
-        <li><i>2</i><b>Te hacés el estudio</b><span>Te parás sobre el podógrafo y vemos en la pantalla cómo apoyás cada zona del pie.</span></li>
-        <li><i>3</i><b>Te hacemos tus plantillas</b><span>Plantillas Aligna fabricadas con tu estudio, en Plastazote®.</span></li>
+        <li><i>01</i><div><b>Pedís turno por WhatsApp</b><p>En Haedo, Ituzaingó o Moreno, el que te quede más cerca.</p></div></li>
+        <li><i>02</i><div><b>Te parás sobre el podógrafo</b><p>Descalzo, unos segundos. No duele. En la pantalla aparece el mapa de tu pisada en colores, con las medidas del pie en milímetros.</p></div></li>
+        <li><i>03</i><div><b>Te explicamos lo que se ve</b><p>Dónde cargás más peso, cómo es tu arco y qué conviene hacer en tu caso.</p></div></li>
+        <li><i>04</i><div><b>Te hacemos tus plantillas</b><p>Plantillas Aligna fabricadas con los datos de tu estudio, en espuma Plastazote®.</p></div></li>
       </ol>
-    </div>
-  </section>
-
-  <!-- 3 · Plantillas Aligna -->
-  <section class="sec sec-claro" id="aligna">
-    <div class="envase dos">
-      <figure class="aligna-foto"><img src="img/plantillas-aligna.webp" alt="Plantillas Aligna a medida, gris y blanca" width="800" height="981" loading="lazy" decoding="async"></figure>
-      <div>
-        <img class="aligna-logo" src="img/logo-aligna.webp" alt="Aligna" width="900" height="383" loading="lazy" decoding="async">
-        <h2>Plantillas <em>a medida.</em></h2>
-        <p class="lead">Cada plantilla Aligna se hace con el estudio de tu pisada. No es un talle de góndola: es la tuya.</p>
-        <span class="sello">Material: Plastazote®</span>
-        <p class="ase">Estamos para asesorarte.</p>
+      <div class="comparo">
+        <div><b>Estudio de tinta</b><p>Deja una huella en un papel.</p></div>
+        <div class="si"><b>Estudio digital</b><p>Muestra la presión de cada zona y mide el pie. Sin tinta y sin moldes.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- 4 · Consultorios -->
-  <section class="sec" id="consultorios">
+  <!-- 3 · Campaña Salud del Pie -->
+  <section class="campana" id="campana">
     <div class="envase">
-      <p class="eti">Dónde</p>
-      <h2>Tres consultorios <em>en el oeste.</em></h2>
-      <div class="zonas">
-        <div class="zona"><b>Haedo</b></div>
-        <div class="zona"><b>Ituzaingó</b></div>
-        <div class="zona"><b>Moreno</b></div>
+      <p class="eti claro">Para jubilados, pensionados y público en general</p>
+      <h2><small>Campaña</small> Salud del Pie</h2>
+      <p class="sub">Traumatología integral</p>
+      <div class="promo">
+        <div class="monto">
+          <span>Valor promocional</span>
+          <b>$60.000</b>
+        </div>
+        <ul class="incluye">
+          <li><span>Incluye</span>Consulta con el traumatólogo</li>
+          <li><span>Y además</span>Plantillas a medida con el estudio digital</li>
+        </ul>
       </div>
-      <p class="nota">Escribinos y te pasamos la dirección y los horarios del que te quede más cerca.</p>
+      <a class="btn btn-wa grande" href="https://wa.me/5491166384242?text=Hola%2C%20quiero%20un%20turno%20para%20la%20Campa%C3%B1a%20Salud%20del%20Pie" target="_blank" rel="noopener" data-wa>
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><use href="#ico-wa"/></svg>
+        Quiero un turno para la campaña
+      </a>
     </div>
   </section>
 
-  <!-- 5 · Cierre -->
+  <!-- 4 · Plantillas Aligna -->
+  <section class="sec" id="plantillas">
+    <div class="envase dos">
+      <figure class="aligna-foto">
+        <img src="img/plantillas-aligna.webp" alt="Plantillas Aligna a medida en espuma Plastazote" width="800" height="981" loading="lazy" decoding="async">
+        <figcaption>Plantillas Aligna · Plastazote®</figcaption>
+      </figure>
+      <div>
+        <p class="eti">Las plantillas</p>
+        <h2>Plantillas a medida, <span>hechas con tu estudio</span></h2>
+        <p class="lead">No es un talle de góndola. Cada plantilla <b>Aligna</b> se fabrica con las medidas y el mapa de presión de tu pie.</p>
+        <ul class="lista">
+          <li>Espuma <b>Plastazote®</b>, liviana y cómoda.</li>
+          <li>Para el calzado de todos los días.</li>
+          <li>Te asesoramos sobre cómo usarlas.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · Consultorios -->
+  <section class="sec sec-papel" id="consultorios">
+    <div class="envase">
+      <p class="eti">Dónde estamos</p>
+      <h2>Estudio de la pisada en <span>Haedo, Ituzaingó y Moreno</span></h2>
+      <div class="sedes">
+        <!-- DIRECCIONES A CONFIRMAR CON FER: cuando las pase, cambiar el texto .dir y el q= del mapa por la dirección exacta. -->
+        <article class="sede">
+          <iframe title="Mapa del consultorio de Haedo" src="https://www.google.com/maps?q=Haedo%2C%20Buenos%20Aires&z=14&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="sede-txt">
+            <h3>Haedo</h3>
+            <p class="dir pend">Dirección a confirmar</p>
+            <a class="btn btn-wa" href="https://wa.me/5491166384242?text=Hola%2C%20quiero%20un%20turno%20en%20Haedo%20para%20el%20estudio%20de%20la%20pisada" target="_blank" rel="noopener" data-wa>Turno en Haedo</a>
+          </div>
+        </article>
+        <article class="sede">
+          <iframe title="Mapa del consultorio de Ituzaingó" src="https://www.google.com/maps?q=Ituzaing%C3%B3%2C%20Buenos%20Aires&z=14&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="sede-txt">
+            <h3>Ituzaingó</h3>
+            <p class="dir pend">Dirección a confirmar</p>
+            <a class="btn btn-wa" href="https://wa.me/5491166384242?text=Hola%2C%20quiero%20un%20turno%20en%20Ituzaing%C3%B3%20para%20el%20estudio%20de%20la%20pisada" target="_blank" rel="noopener" data-wa>Turno en Ituzaingó</a>
+          </div>
+        </article>
+        <article class="sede">
+          <iframe title="Mapa del consultorio de Moreno" src="https://www.google.com/maps?q=Moreno%2C%20Buenos%20Aires&z=14&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="sede-txt">
+            <h3>Moreno</h3>
+            <p class="dir pend">Dirección a confirmar</p>
+            <a class="btn btn-wa" href="https://wa.me/5491166384242?text=Hola%2C%20quiero%20un%20turno%20en%20Moreno%20para%20el%20estudio%20de%20la%20pisada" target="_blank" rel="noopener" data-wa>Turno en Moreno</a>
+          </div>
+        </article>
+      </div>
+      <p class="nota">Días y horarios: escribinos y te pasamos los del consultorio que te quede más cerca.</p>
+    </div>
+  </section>
+
+  <!-- 6 · Preguntas frecuentes (respuestas a validar por el Dr. Zabala) -->
+  <section class="sec" id="preguntas">
+    <div class="envase angosto">
+      <p class="eti">Preguntas frecuentes</p>
+      <h2>Lo que más <span>nos preguntan</span></h2>
+      <div class="faq">
+        <details><summary>¿Qué es el estudio de la pisada y cuánto dura?</summary><p>Te parás descalzo sobre el podógrafo digital y en la pantalla vemos cómo apoyás cada zona del pie y dónde cargás el peso. Se hace en pocos minutos.</p></details>
+        <details><summary>¿Duele? ¿Tengo que llevar algo?</summary><p>No duele: solo te parás sobre una superficie de vidrio. Traé el calzado que más usás, así lo miramos también.</p></details>
+        <details><summary>¿Qué diferencia hay entre el estudio digital y el de tinta?</summary><p>El de tinta deja una huella. El digital muestra la presión de cada zona en colores y toma medidas del pie en milímetros, sin tinta y sin moldes.</p></details>
+        <details><summary>Me duelen las rodillas o la espalda: ¿puede venir de cómo piso?</summary><p>A veces la forma de pisar influye. El estudio ayuda a verlo, y si hace falta te consulta el traumatólogo.</p></details>
+        <details><summary>¿Una plantilla de farmacia sirve igual que una a medida?</summary><p>La de farmacia viene en talles estándar. La plantilla Aligna se fabrica con los datos de tu estudio, para tu pie.</p></details>
+        <details><summary>¿Tengo que usar la plantilla en todos los zapatos?</summary><p>Lo ideal es usarla en el calzado de todos los días. En el consultorio te decimos cómo hacerlo según tu caso.</p></details>
+        <details><summary>¿Cuánto tarda uno en acostumbrarse?</summary><p>Por lo general, unos días. Conviene empezar de a poco, unas horas por día.</p></details>
+        <details><summary>¿Cada cuánto conviene repetir el estudio?</summary><p>Depende de cada persona. En los chicos que están creciendo se controla más seguido.</p></details>
+        <details><summary>¿Dónde se hace el estudio de la pisada?</summary><p>En nuestros consultorios de Haedo, Ituzaingó y Moreno. Pedí tu turno por WhatsApp al <a href="https://wa.me/5491166384242" target="_blank" rel="noopener" data-wa>11 6638-4242</a>.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · Quiénes somos (solo nombres, sin fotos) -->
+  <section class="sec sec-papel" id="quienes">
+    <div class="envase">
+      <p class="eti">Quiénes somos</p>
+      <ul class="equipo">
+        <li><b>Prof. Dr. Fabián Zabala</b><span>Traumatología</span></li>
+        <li><b>Fernando Masso</b><span>Relaciones empresariales</span></li>
+        <li><b>Karina Salomón</b><span>Relaciones empresariales</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 8 · Cierre -->
   <section class="sec cierre">
     <div class="envase">
-      <h2>¿Querés hacerte <em>el estudio?</em></h2>
-      <p class="lead">Escribinos y te damos turno. Estamos para asesorarte.</p>
-      <a class="btn btn-wa grande" href="https://wa.me/5491166384242?text=Hola%2C%20quiero%20un%20turno%20para%20el%20estudio%20de%20la%20pisada" target="_blank" rel="noopener" data-wa>Escribinos por WhatsApp</a>
+      <h2>¿Querés hacerte <span>el estudio?</span></h2>
+      <p class="lead">Escribinos y te damos turno en el consultorio que te quede más cerca.</p>
+      <a class="btn btn-wa grande" href="https://wa.me/5491166384242?text=Hola%2C%20quiero%20un%20turno%20para%20el%20estudio%20de%20la%20pisada" target="_blank" rel="noopener" data-wa>
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><use href="#ico-wa"/></svg>
+        Escribinos por WhatsApp
+      </a>
       <p class="tel">11 6638-4242</p>
     </div>
   </section>
@@ -100,14 +283,19 @@
 
 <footer class="pie">
   <div class="envase pie-grid">
-    <img src="img/logo-sdlp.webp" alt="Studio de la Pisada" width="600" height="652" loading="lazy" decoding="async">
-    <p>El estudio de la pisada es una herramienta de evaluación y no reemplaza la consulta médica.<br>Plastazote® es una marca registrada.</p>
+    <img src="img/logo-circular.webp" alt="Studio de la Pisada" width="180" height="180" loading="lazy" decoding="async">
+    <p>El estudio de la pisada es una herramienta de evaluación y no reemplaza la consulta médica.<br>Plastazote® es una marca registrada. Aligna es la marca de nuestras plantillas.</p>
   </div>
 </footer>
 
-<a class="wa-flota" href="https://wa.me/5491166384242?text=Hola%2C%20quiero%20un%20turno%20para%20el%20estudio%20de%20la%20pisada" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp" data-wa>
-  <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg>
+<a class="wa-flota" href="https://wa.me/5491166384242?text=Hola%2C%20quiero%20un%20turno%20para%20el%20estudio%20de%20la%20pisada" target="_blank" rel="noopener" data-wa>
+  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><use href="#ico-wa"/></svg>
+  <span>Turnos</span>
 </a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ico-wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></symbol>
+</svg>
 
 <script src="main.js" defer></script>
 </body>
